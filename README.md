@@ -26,11 +26,11 @@ The **[order system](https://github.com/khoribz/SalesSystem/tree/master/order_sy
 **Home page**
 
 On the right are the buttons "Home", "Login" (for the cashier) and "Admin" - administrator authentication.
-![order_system/main](screenshots/main.jpg)
+![main](order_system/screenshots/main.jpg)
 **Admin Panel** 
 
 **Interface for the cashier** 
 
 Each order is displayed on the screen. To place an order, you need to click on the "Accept order" button.
-![order_system/user](screenshots/user.jpg)
+![user](order_system/screenshots/user.jpg)
 
