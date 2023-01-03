@@ -8,7 +8,7 @@ docker-compose build
 docker-compose up
 ```
 The site is deployed using a web server and a mail proxy server - **Nginx** and an HTTP server with a Python web server gateway interface - **Gunicorn**    
-Then you need to open the link *http://127.0.0.1:8000 /*<br>
+Then you need to open the link *http://0.0.0.0:8000 /*<br>
 To log in to the cashier's account, you can use the login:*student*, password:*sugar123**
 
 The program uses the **Model-View-Controller (MVC)** architectural pattern, the essence of which is to divide
