@@ -4,4 +4,4 @@ django.pub
 /venv/
 /.idea/
 *.pyc
-/.env
+
