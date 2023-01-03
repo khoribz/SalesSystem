@@ -1,0 +1,20 @@
+{% extends 'store/base.html' %}
+
+{% block title %}
+{{ title}}
+{% endblock %}
+
+{% block content %}
+    <h1> Доступ предоставлен</h1><br><br>
+    <div class="alert alert-warning mt-2">
+    <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'create'%}">
+        Принять заказ</a>
+    </div >
+    {% for product in products%}
+        <div class="grid" >
+            <h3>{{product.title}}</h3>
+            <p>Кол-во: {{product.product_num}}</p>
+            <br>
+        </div>
+    {% endfor%}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'store/base.html' %}
+{% block title %}
+Создать задачу
+{% endblock %}
+
+{% block content %}
+    <h1> Заказ</h1>
+    <div class='col-4'>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.product_num }}<br>
+        <button type="submit" class="btn btn-success"> Добавить</button>
+        <span> {{error}}</span>
+    </form>
+    </div>
+{% endblock %}

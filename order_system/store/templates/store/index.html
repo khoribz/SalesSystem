@@ -1,0 +1,36 @@
+{% extends 'store/base.html' %}
+
+{% block title %}
+{{ title}}
+{% endblock %}
+
+{% block content %}
+<h2 align="center">Главная страница</h2>
+<div align="center">
+    <p4>На этой странице можно ознакомиться с товарами<br>
+        Кассирам нужно авторизоваться по кнопке "Кассир"
+        <br> Для администратора требуется авторизоваться по кнопке "Админ"
+    </p4>
+    <br><br>
+</div>
+
+{% for product in products %}
+<div align="center" class="product">
+    <div align="center" class="col-md-4">
+        <div align="center" class="title" style="margin-left: 10px;">
+            <h4>{{ product.products.title}} - {{product.products.price}} рублей</h4>
+        </div>
+
+        <div align="center" class="image">
+            <img src="{{ product.product_menu_image.url }}" class="img-responsive"
+                 style="width: 100%; float: left;
+                              margin-bottom: 20px;
+                              margin-right: 20px;
+                              margin-top: 0px;
+                              margin-left: 20px;"/>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+

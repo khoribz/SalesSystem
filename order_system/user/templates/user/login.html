@@ -1,0 +1,12 @@
+  <h2>Вход</h2>
+
+    <form method="post">
+      {% csrf_token %}
+      <table>
+        {{ form.as_p }}
+        <tr>
+          <td>&nbsp;</td>
+          <td><input type="submit" value="Войти"></td>
+        </tr>
+      </table>
+    </form>

@@ -1,0 +1,7 @@
+django
+django.pub
+/venv/lib/python3.10/site-packages/
+/venv/
+/.idea/
+*.pyc
+/.env
